@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="temp1"></p>
+    <p id="temp2"></p>
+    
+</body>
+<script>
+    const letters = new Set(["a","b","c"]);
+    const lett1 = new Set();
+    const a = "aa";
+    const b = "bb"
+    const c = "cc";
+
+    lett1.add(a);
+    lett1.add(b);
+    lett1.add(c);
+    
+    let text1 = "";
+    letters.forEach (function(value){text1 += value;});
+    let text2 = "";
+    for (const x of lett1.values()){
+        text2 += x;
+    }
+
+    document.getElementById("temp1").innerHTML = text1;
+    document.getElementById("temp2").innerHTML = text2;
+    
+    
+</script>
+</html>

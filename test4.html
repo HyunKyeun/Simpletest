@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <p id = "temo1"></p>
+    <p id = "temo2"></p>
+    <p id = "temo3"></p>
+    <button onmouseover="count()">hello?</button>
+</body>
+<script>
+    var count1 = -1;
+    function count(){
+        
+        count1++;
+        document.getElementById("temo3").innerHTML = count1;
+    }
+    
+    function sum(x,y){
+        return x+ y;
+    }
+    document.getElementById("demo").innerHTML = sum(3,5);
+
+    const ppl = {
+        lastname : "Na",
+        firstname : "dango",
+        fullname : function(){
+            return this.firstname + " " + this.lastname;
+        }
+    };
+
+    document.getElementById("temo1").innerHTML = ppl.fullname;
+    document.getElementById("temo2").innerHTML = ppl.fullname();
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo">abcdabcdabcdacacaaa</p>
+
+    <p id='temp'></p>
+    <p id='temp1'></p>
+    <p id='temp2'></p>
+</body>
+<script>
+    function myFunction(){
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML = text.replace(/a/g,"y");
+    } 
+
+let text = "a,b,c,d,e"
+const Array = text.split("");
+
+txt = "";
+for(let i = 0; i < Array.length; i++){
+    txt += Array[i] + "<br>"
+}
+document.getElementById("temp").innerHTML = txt;
+
+let str = "uddcshwgvxcbsahu";
+document.getElementById("temp1").innerHTML = str.lastIndexOf("u");
+let a = "hi", b = "guys";
+let txts = `oh ${a} ! ${b}!!`;
+
+let price = 10;
+let tips = 0.25;
+
+let total = `${(price * (1 + tips)).toFixed(1)}`;
+document.getElementById("temp2").innerHTML = total;
+
+
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a;
+        document.write( "typeof a : " + typeof a + "<br>" );
+        var a = 3;
+        document.write( "typeof a = 3: " + typeof a + "<br>" );
+        var a = 'Lorem';
+        document.write( "typeof a = 'Lorem' : " + typeof a + "<br>" );
+        var a = true;
+        document.write( "typeof a = true : " + typeof a + "<br>" );
+        var a = [ 'Lorem', 'Ipsum', 'Dolor' ];
+        document.write( "typeof a = [ 'Lorem', 'Ipsum', 'Dolor' ] : " + typeof a + "<br>" );
+        function a(){};
+        document.write( "typeof a(){} : " + typeof a + "<br>" );
+        var a = function(){};
+        document.write( "typeof a = function(){} : " + typeof a + "<br>" );
+        var a = Symbol();
+        document.write( "typeof a = Symbol() : " + typeof a + "<br>" );
+      </script>
+</body>
+</html>

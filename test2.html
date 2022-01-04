@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = 'test1'></p>
+    <p id = 'test2'></p>
+    <p id = 'test31'></p>
+    <p id = 'test32'></p>
+    <p id = 'test33'></p>
+    <p id = 'test4'></p>
+    
+</body>
+<script>
+    const ppl = ['a','b','c'];
+    ppl[3] = 'd';
+    ppl.push('e');
+    document.getElementById("test1").innerHTML = ppl;
+
+    const me = {type : "ppl", height : 180, number : '3', bool : false };
+    me.bool = true;
+    me.height = "onehundred"; // number -> string... "" need
+    me.number = 4+5; // string -> number but doesnt care
+    document.getElementById("test2").innerHTML = me.type + " , " + me.height + " , " + me.number + " , " + me.bool;
+    const x = 10;
+    document.getElementById("test31").innerHTML = x;
+
+    {const x = 20;document.getElementById("test32").innerHTML = x;
+    }
+    document.getElementById("test33").innerHTML = x;
+
+    document.getElementById("test4").innerHTML = 
+    typeof me.bool + "  " +
+    typeof me.height + "  " +
+    typeof me.number;
+
+
+</script>
+</html>

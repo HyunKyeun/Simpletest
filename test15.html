@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="deo"></p>
+    <p id="geo"></p>
+</body>
+<script>
+    document.getElementById("deo").innerHTML = bin2dec(101);
+    
+    function bin2dec(bin){
+        return parseInt(bin, 10).toString(2);
+    }
+
+    let p = "e";
+    let pat = /"$[p]"/; 
+    pat.test("The best things in life are free!");
+    document.getElementById("geo").innerHTML = pat.test("The best things in life are free!");
+</script>
+</html>

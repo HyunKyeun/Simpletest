@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "temp1"></p>
+    <p id = "temp2"></p>
+
+</body>
+<script>
+    const fruits = new Map([
+        ["apple", 500],
+        ["bpple", 300],
+        ["cpple", 200]
+    ]);
+    const ppl = new Map();
+
+    ppl.set("a",10);
+    ppl.set("b",11);
+    let txt = ppl.get("b");
+    document.getElementById("temp1").innerHTML = txt;
+    fruits.delete("cpple");
+
+    let text1 = "";
+    fruits.forEach (function(value, key){
+        text1 += key + ' = ' + value + "<br>";
+    });
+    document.getElementById("temp2").innerHTML = text1;
+
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="temp"></p>
+    <p id="temp1"></p>
+    <p id="temp2"></p>
+</body>
+<script>
+    var dog = {name :"식빵", family : "husky"};
+    var data = JSON.stringify(dog);
+    document.getElementById("temp").innerHTML = data;
+   
+    let text =  '{"employees":[' +
+                '{"firstName":"John","lastName":"Doe" },' +
+                '{"firstName":"Anna","lastName":"Smith" },' +
+                '{"firstName":"Peter","lastName":"Jones" }]}';
+    const obj = JSON.parse(text);
+    document.getElementById("temp1").innerHTML = obj.employees[1].firstName + '<br>'  + obj.employees[2].lastName;
+    document.getElementById("temp2").innerHTML = JSON.stringify();
+</script>
+</html>

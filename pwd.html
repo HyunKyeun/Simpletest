@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="off">
+        <fieldset>
+            <legend>ppl:</legend>
+            <label for="gend">Gender</label><br>
+            <input list="gend" placeholder="Check your Gender" title="Choose your gender" 
+            required oninvalid="this.setCustomValidity('Choose your gender')">
+            <datalist id="gend">
+            <option value="Male">
+            <option value="Female">
+            </datalist><br>
+            <label for="dis">disabled checking</label><br>
+            <input type="text" id="dis" name="dis" placeholder="Dis checking" disabled><br>
+            <label for="dis">Age</label><br>
+            <input type="number" id="age" name="age" min="0" max="90" placeholder="Age" title="Put your age (0~90)" 
+            required oninvalid="this.setCustomValidity('Put your age(0~90)')"><br>
+            <label for="id">ID:</label><br>
+            <input type="text" id="id" name="id" placeholder="Enter your ID" title="ID shoulde be required" required><br>
+            <label for="pwd">PWD:</label><br>
+            <input type="password" id="pwd" name="pwd" maxlength="6" pattern="[0-9]{6}" placeholder="Enter your PWD" title ="you should put 6 digits" required>
+            <input type="checkbox" onclick="onofffunction()">Show Password<br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset"><br><br>
+            
+        </fieldset>
+    </form>
+
+<script>
+
+    function onofffunction() {
+        var x = document.getElementById("pwd")
+        if (x.type === "password"){
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+
+    }
+    
+</script>
+
+</body>
+</html>

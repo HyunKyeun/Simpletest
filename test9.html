@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="temp1"></p>
+    <p id ="temp2"></p>
+    <p id ="temp3"></p>
+    
+</body>
+<script>
+    const a = new Date();
+    const b = new Date(2022, 11, 2, 23, 5)
+    const c = new Date(500000000000);
+
+    
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    document.getElementById("temp1").innerHTML = days[a.getDay()];
+    document.getElementById("temp2").innerHTML = b;
+    document.getElementById("temp3").innerHTML = c;
+    
+
+</script>
+</html>

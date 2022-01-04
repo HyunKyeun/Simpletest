@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="temp"></p>
+    
+</body>
+<script>
+    const frufru = ["1","2","3","4"]
+
+    let position =frufru.indexOf("3") + 1;
+
+    document.getElementById("demo").innerHTML = position;
+
+    const numb = [4,7,10,13,16,20];
+    document.getElementById("demo1").innerHTML = numb.findIndex(findingvalue);
+
+    function findingvalue(value, index, array){
+        return value > 15;
+    }
+
+    const apbarr = Array.from("abcdedffnekdsodksa");
+    document.getElementById("temp").innerHTML = apbarr;
+
+</script>
+</html>
